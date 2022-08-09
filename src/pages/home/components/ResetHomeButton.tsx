@@ -9,6 +9,6 @@ export const ResetHomeButton = () => {
   };
 
   return (
-    <button onClick={ dispatchAction }>Dispatch modify</button>
+    <button onClick={ dispatchAction }>Dispatch reset</button>
   );
 };
