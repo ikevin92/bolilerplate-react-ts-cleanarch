@@ -1,10 +1,10 @@
-import { useDispatch } from 'react-redux';
+import { useAppDispatch } from '../../../redux/hooks/hooks';
 import { resetUser } from '../../../redux/slices/user.slice';
 
 export const ResetHomeButton = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
-  const dispatchAction = async () => {
+  const dispatchAction = () => {
     dispatch(resetUser());
   };
 

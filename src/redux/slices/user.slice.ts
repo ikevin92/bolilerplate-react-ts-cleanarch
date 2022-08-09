@@ -1,15 +1,16 @@
 
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UserEmptyState } from '../../models';
+import { User } from '../../models/user.type';
 
 export const userSlice = createSlice({
   name: 'user',
   initialState: UserEmptyState,
   reducers: {
-    createUser: (state, action) => {
+    createUser: (state: User, action: PayloadAction<User>) => {
       return action.payload;
     },
-    modifyUser: (state, action) => {
+    modifyUser: (state: User, action: PayloadAction<User>) => {
       const formattedData = { ...state, ...action.payload };
       return formattedData;
     },
