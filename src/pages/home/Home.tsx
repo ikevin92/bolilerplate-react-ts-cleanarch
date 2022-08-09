@@ -6,10 +6,10 @@ export const Home = () => {
 
   return (
     <Layout>
+      <HomeTitle>Abemus Home</HomeTitle>
       <CreateHomeButton />
       <ModifyHomeButton />
       <ResetHomeButton />
-      <HomeTitle>Abemus Home</HomeTitle>
     </Layout>
   );
 };
