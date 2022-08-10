@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { User } from '../models';
+import { ApiUser } from '../models';
 import { userReducer } from './slices';
 
 export interface AppStore {
-  user: User;
+  user: ApiUser;
 }
 
 export const store = configureStore<AppStore>({
